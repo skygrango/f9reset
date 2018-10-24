@@ -1,1 +1,1 @@
-För er som är lata som fan.
+FÃ¶r er som Ã¤r lata som fan.
