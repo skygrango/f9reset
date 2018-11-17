@@ -10,12 +10,22 @@ local Keys = {
   ["NENTER"] = 201, ["N4"] = 108, ["N5"] = 60, ["N6"] = 107, ["N+"] = 96, ["N-"] = 97, ["N7"] = 117, ["N8"] = 61, ["N9"] = 118
 }
 
+local isDead = false
+
+AddEventHandler('esx:onPlayerDeath', function(data)
+	isDead = true
+end)
+
+AddEventHandler('playerSpawned', function(spawn)
+	isDead = false
+end)
+
 Citizen.CreateThread(function()
     while true do
 
         Wait(0)
 
-if IsControlPressed(0, Keys['F9']) then
+if IsControlPressed(0, Keys['F9']) and isDead then
             ClearPedTasksImmediately(GetPlayerPed(-1))
             CurrentAction = nil      
         end
