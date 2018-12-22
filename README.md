@@ -1,6 +1,9 @@
-För er som är lata som fan.
+F9Reset. Användbar ifall du har problem med att ambulans tex inte kan se dig. (funkar endast när du är död)
 
+(english) Useful if you have problems with the ambulance eg not seeing you. (works only when you are dead)
 
-F9 Funkar endast om man är död
+Install:
 
-(F9 Only works if you´re dead)
+-  Put f9Reset in your resources
+-  Put start f9reset in your server.cfg
+-  Done!
