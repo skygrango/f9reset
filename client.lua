@@ -25,7 +25,7 @@ Citizen.CreateThread(function()
 
         Wait(0)
 
-if IsControlPressed(0, Keys['F9']) and isDead then
+        if IsControlPressed(0, Keys['F9']) and isDead then
             ClearPedTasksImmediately(GetPlayerPed(-1))
             CurrentAction = nil      
         end
